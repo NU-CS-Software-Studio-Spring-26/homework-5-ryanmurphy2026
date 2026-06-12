@@ -57,6 +57,11 @@ group :development do
 end
 
 group :test do
+  gem "cucumber", require: false
+  gem "rspec-rails"
+  gem "simplecov", require: false
+  gem "sys-uname", path: "vendor/sys-uname"
+
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "capybara"
   gem "selenium-webdriver"
